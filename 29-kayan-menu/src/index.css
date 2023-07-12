@@ -1,0 +1,109 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.menu {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  margin: 20px auto;
+}
+
+.menu .divider {
+  height: 3px;
+  width: var(--width);
+  left: var(--left);
+  bottom: 0;
+  background-color: deepskyblue;
+  position: absolute;
+  transition: 300ms all;
+  border-radius: 3px 3px 0 0;
+}
+
+.menu button {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.horizontal-menu {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.horizontal-menu .divider {
+  height: var(--height);
+  width: var(--width);
+  left: var(--left);
+  top: var(--top);
+  background-color: deepskyblue;
+  position: absolute;
+  transition: 300ms all;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.horizontal-menu button {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  transition: 300ms all;
+}
+
+.vertical-menu {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.vertical-menu .divider {
+  height: var(--height);
+  width: 3px;
+  top: var(--top);
+  bottom: 0;
+  left: 0;
+  background-color: deepskyblue;
+  position: absolute;
+  transition: 300ms all;
+  border-radius: 0 3px 3px 0;
+}
+
+.vertical-menu button {
+  padding: 12px 15px;
+  font-size: 14px;
+  text-align: left;
+}

@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center rounded-lg p-4 transition-colors duration-300 hover:text-white;
+  }
+  .nav-link {
+    @apply flex h-10 w-full items-center rounded px-3 text-sm font-medium text-deneme transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white;
+  }
+
+  .nav-link.active {
+    @apply bg-deneme text-white;
+  }
+
+  .modal {
+    @apply invisible fixed inset-0 z-50 flex items-center justify-center bg-deneme/60 opacity-0;
+  }
+
+  .modal.active {
+    @apply visible opacity-100;
+  }
+
+  .modal-content {
+    @apply min-w-[600px] max-w-full rounded bg-white p-10 dark:bg-gray-900;
+  }
+
+  .slider-item {
+    @apply flex w-full flex-col items-center rounded border px-4 py-5 transition-colors;
+  }
+
+  .sidebar {
+    // -translate-x-full lg:translate-x-0
+    @apply invisible absolute inset-0 top-15 z-50 flex w-full flex-shrink-0 scale-90 flex-col divide-y divide-gray-100 overflow-auto border-r border-gray-100 bg-white p-2 opacity-0 transition-all dark:divide-gray-800 dark:border-gray-800 dark:bg-gray-800 lg:visible lg:relative lg:top-0 lg:flex lg:w-64 lg:scale-100 lg:opacity-100;
+  }
+
+  .sidebar.active {
+    // -translate-x-0
+    @apply visible scale-100 opacity-100;
+  }
+}

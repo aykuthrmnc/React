@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "username": "aykut",
+      "password": "123456",
+      "email": "aykut@gmail.com",
+      "full_name": "aykuth",
+      "id": 1
+    },
+    {
+      "username": "aykut1",
+      "password": "123456",
+      "email": "a@gmail.com",
+      "full_name": "aykut11",
+      "id": 2
+    }
+  ],
+  "categories": [],
+  "records": []
+}

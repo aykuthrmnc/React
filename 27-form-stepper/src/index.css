@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply h-10 rounded px-4 outline-none border border-zinc-400 text-sm focus:border-black w-full;
+  }
+
+  .textarea {
+    @apply rounded py-2.5 px-4 outline-none border border-zinc-400 text-sm focus:border-black resize-none w-full;
+  }
+
+  .button {
+    @apply bg-black h-10 rounded text-white text-sm disabled:opacity-50;
+  }
+}
